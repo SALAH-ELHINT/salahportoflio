@@ -1,1 +1,1 @@
-web: yarn serve
+web: gatsby serve -p $PORT --prefix-paths
