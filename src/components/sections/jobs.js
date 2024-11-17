@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { CSSTransition } from 'react-transition-group';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -165,29 +164,64 @@ const StyledTabPanel = styled.div`
 `;
 
 const Jobs = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
-        edges {
-          node {
-            frontmatter {
-              title
-              company
-              location
-              range
-              url
-            }
-            html
-          }
-        }
-      }
-    }
-  `);
-
-  const jobsData = data.jobs.edges;
+  const jobsData = [
+    {
+      frontmatter: {
+        title: 'Frontend Developer',
+        company: 'Archipel',
+        range: 'December 2023 - May 2023',
+        url: 'https://archipel.group/',
+      },
+      html: `<ul>
+        <li>Led the development of intuitive user interfaces using modern front-end frameworks</li>
+        <li>Implemented advanced front-end technologies and optimized website performance</li>
+        <li>Collaborated with the team to improve application functionality and user experience</li>
+        <li>Integrated APIs and optimized performance for better user engagement</li>
+      </ul>`,
+    },
+    {
+      frontmatter: {
+        title: 'Mobile Application Developer',
+        company: 'Origin Control',
+        range: 'December 2023 - January 2024',
+        url: '#',
+      },
+      html: `<ul>
+        <li>Designed and developed a mobile application using React Native Expo for machine connectivity</li>
+        <li>Implemented features for machine control through a dedicated server</li>
+        <li>Integrated complex functionalities while maintaining smooth user experience</li>
+        <li>Collaborated remotely with international team members</li>
+      </ul>`,
+    },
+    {
+      frontmatter: {
+        title: 'Data Scientist',
+        company: 'FPM (Idemia)',
+        range: 'October 2023 - November 2023',
+        url: 'https://www.idemia.com/',
+      },
+      html: `<ul>
+        <li>Designed and implemented sophisticated data collection solutions</li>
+        <li>Enhanced data management and analysis processes</li>
+        <li>Utilized web scraping techniques for efficient data gathering</li>
+        <li>Contributed to improving data processing workflows and methodologies</li>
+      </ul>`,
+    },
+    {
+      frontmatter: {
+        title: 'Development Intern',
+        company: 'Origin Control (Canada)',
+        range: 'February 2023 - March 2023',
+        url: '#',
+      },
+      html: `<ul>
+        <li>Developed office applications using Python and wxPython</li>
+        <li>Created a real-time data acquisition application from sensors</li>
+        <li>Collaborated with team members to optimize code and improve application functionality</li>
+        <li>Gained hands-on experience in developing desktop applications</li>
+      </ul>`,
+    },
+  ];
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -244,13 +278,13 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">Where I've Worked</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
           {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+            jobsData.map((job, i) => {
+              const { company } = job.frontmatter;
               return (
                 <StyledTabButton
                   key={i}
@@ -271,8 +305,8 @@ const Jobs = () => {
 
         <StyledTabPanels>
           {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { frontmatter, html } = node;
+            jobsData.map((job, i) => {
+              const { frontmatter, html } = job;
               const { title, url, company, range } = frontmatter;
 
               return (

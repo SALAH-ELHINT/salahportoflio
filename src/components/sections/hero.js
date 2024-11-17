@@ -60,28 +60,23 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
+  const two = <h2 className="big-heading">Salah El Hint.</h2>;
   const three = <h3 className="big-heading">I build things for the web.</h3>;
   const four = (
-    <>
-      <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
-      </p>
-    </>
+    <p>
+      I'm a Full Stack Developer specializing in modern web technologies and task automation. With a
+      fresh Bachelor's degree in Computer Development from Hassan II University, I bring a strong
+      foundation in building innovative web solutions and a passion for creating efficient,
+      user-centric applications.
+    </p>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="https://github.com/SALAH-ELHINT"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Check out my GitHub!
     </a>
   );
 

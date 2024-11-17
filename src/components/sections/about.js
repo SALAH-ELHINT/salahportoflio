@@ -125,7 +125,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'JavaScript',
+    'Python',
+    'PHP',
+    'React',
+    'Vue.js',
+    'Laravel',
+    'HTML5 & CSS3',
+    'MongoDB',
+    'SQL',
+    'Git',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +146,29 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I'm Salah, a Full Stack Web Developer passionate about creating impactful
+              digital solutions. My journey in web development has been driven by a constant desire
+              to learn and innovate.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              I recently completed my Professional Bachelor's degree in Computer Development from
+              Hassan II University, where I honed my skills in software development and computer
+              science. I also hold a specialized diploma in Full Stack Web Development from ISTA
+              NTIC. My professional journey includes valuable experiences as a Frontend Developer at{' '}
+              <a href="https://archipel.ma/">Archipel</a> and as a Data Scientist at{' '}
+              <a href="https://www.idemia.com/">FPM (Idemia)</a>, where I worked on impactful
+              projects that enhanced my technical expertise.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I specialize in creating robust full-stack applications, web scraping, and task
+              automation, always focusing on creating efficient, scalable solutions. My experience
+              includes developing intuitive user interfaces and implementing data collection
+              solutions that make a real difference.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -173,7 +180,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.jpeg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

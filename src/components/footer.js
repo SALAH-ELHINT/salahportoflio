@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
@@ -48,52 +48,37 @@ const StyledCredit = styled.div`
 
   a {
     padding: 10px;
+    transition: var(--transition);
+    &:hover {
+      color: var(--green);
+    }
   }
 
-  .github-stats {
-    margin-top: 10px;
+  .contact-info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 
-    & > span {
-      display: inline-flex;
+    a {
+      display: flex;
       align-items: center;
-      margin: 0 7px;
-    }
-    svg {
-      display: inline-block;
-      margin-right: 5px;
-      width: 14px;
-      height: 14px;
+
+      svg {
+        margin-right: 5px;
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 `;
 
-const Footer = () => {
-  const [githubInfo, setGitHubInfo] = useState({
-    stars: null,
-    forks: null,
-  });
-
-  useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
-    }
-    fetch('https://api.github.com/repos/bchiang7/v4')
-      .then(response => response.json())
-      .then(json => {
-        const { stargazers_count, forks_count } = json;
-        setGitHubInfo({
-          stars: stargazers_count,
-          forks: forks_count,
-        });
-      })
-      .catch(e => console.error(e));
-  }, []);
-
-  return (
-    <StyledFooter>
-      <StyledSocialLinks>
-        <ul>
-          {socialMedia &&
+const Footer = () => (
+  <StyledFooter>
+    <StyledSocialLinks>
+      <ul>
+        {socialMedia &&
             socialMedia.map(({ name, url }, i) => (
               <li key={i}>
                 <a href={url} aria-label={name}>
@@ -101,30 +86,35 @@ const Footer = () => {
                 </a>
               </li>
             ))}
-        </ul>
-      </StyledSocialLinks>
+      </ul>
+    </StyledSocialLinks>
 
-      <StyledCredit tabindex="-1">
-        <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
-
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
+    <StyledCredit tabindex="-1">
+      <div className="contact-info">
+        <a href="tel:+212635278125">
+          <Icon name="Phone" />
+            +212 635-278-125
         </a>
-      </StyledCredit>
-    </StyledFooter>
-  );
-};
+        <a href="mailto:salah.elhint@gmail.com">
+          <Icon name="Email" />
+            salah.elhint@gmail.com
+        </a>
+        <a href="https://github.com/SALAH-ELHINT">
+          <Icon name="GitHub" />
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/salah-elhint-70447925b/">
+          <Icon name="Linkedin" />
+            LinkedIn
+        </a>
+      </div>
+
+      <a href="https://www.linkedin.com/in/salah-elhint-70447925b/">
+        <div>Designed &amp; Built by Salah El Hint</div>
+      </a>
+    </StyledCredit>
+  </StyledFooter>
+);
 
 Footer.propTypes = {
   githubInfo: PropTypes.object,

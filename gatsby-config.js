@@ -1,13 +1,17 @@
 const config = require('./src/config');
 
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+  },
   siteMetadata: {
-    title: 'Brittany Chiang',
+    title: 'Salah El Hint',
     description:
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+      'Salah El Hint is a Full Stack Web Developer who specializes in building exceptional digital experiences.',
+    siteUrl: 'https://salah-portfolio.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@salah-elhint',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Salah El Hint',
+        short_name: 'Salah El Hint',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
