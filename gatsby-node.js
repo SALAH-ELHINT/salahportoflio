@@ -66,6 +66,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 };
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter {
+      title: String
+      date: Date @dateformat
+      cover: String
+      ios: String
+      android: String
+      github: String
+      external: String
+      tech: [String]
+      company: String
+      showInProjects: Boolean
+    }
+  `;
+  createTypes(typeDefs);
+};
+
 // https://www.gatsbyjs.org/docs/node-apis/#onCreateWebpackConfig
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   // https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules
