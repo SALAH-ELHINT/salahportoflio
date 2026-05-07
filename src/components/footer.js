@@ -79,13 +79,13 @@ const Footer = () => (
     <StyledSocialLinks>
       <ul>
         {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
-              <li key={i}>
-                <a href={url} aria-label={name}>
-                  <Icon name={name} />
-                </a>
-              </li>
-            ))}
+          socialMedia.map(({ name, url }, i) => (
+            <li key={i}>
+              <a href={url} aria-label={name}>
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
       </ul>
     </StyledSocialLinks>
 
@@ -93,19 +93,19 @@ const Footer = () => (
       <div className="contact-info">
         <a href="tel:+212635278125">
           <Icon name="Phone" />
-            +212 635-278-125
+          +212 635-278-125
         </a>
-        <a href="mailto:salah.elhint@gmail.com">
+        <a href="mailto:salah.elhint.dev@gmail.com">
           <Icon name="Email" />
-            salah.elhint@gmail.com
+          salah.elhint.dev@gmail.com
         </a>
         <a href="https://github.com/SALAH-ELHINT">
           <Icon name="GitHub" />
-            GitHub
+          GitHub
         </a>
         <a href="https://www.linkedin.com/in/salah-elhint-70447925b/">
           <Icon name="Linkedin" />
-            LinkedIn
+          LinkedIn
         </a>
       </div>
 

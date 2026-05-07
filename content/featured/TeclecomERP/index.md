@@ -1,15 +1,16 @@
 ---
-date: '1'
-title: 'Enterprise Resource Planning (ERP)'
+date: '2'
+title: 'Numa ERP Platform'
 cover: './erp-dashboard.png'
-external: 'https://app.teclecom.com'
+external: 'https://demo.numa.ma/'
 tech:
-  - React
+  - React.js
   - Laravel
-  - MySQL
-  - Material UI
+  - MySQL (140+ Tables)
+  - Cloud VPS
   - Redux
   - RESTful API
+  - RBAC
 ---
 
-A comprehensive ERP solution developed for Teclecom company that streamlines business operations. Features include interactive dashboard, CRM, inventory management, sales tracking, purchase management, treasury functions, catalog management, HR tools, and advanced reporting capabilities. The system integrates multiple modules to provide a seamless enterprise management experience.
+A massive enterprise SaaS ERP platform developed entirely single-handedly. Built complex interconnected modules for Inventory, CRM, HR, Finance & Treasury with granular Role-Based Access Control (RBAC). The system features <strong>over 140 database tables</strong>, providing a highly scalable and robust enterprise management experience with dynamic dashboards, real-time analytics, and customizable document styling.

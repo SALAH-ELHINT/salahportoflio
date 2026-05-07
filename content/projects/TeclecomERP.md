@@ -1,13 +1,16 @@
 ---
-date: '2023-05-15'
-title: 'Teclecom ERP System'
-external: 'https://app.teclecom.com'
+date: '2024-10-15'
+title: 'Numa ERP System'
+external: '#'
 tech:
-  - React
+  - React.js
   - Laravel
-  - MySQL
-  - Material UI
+  - MySQL (140+ Tables)
+  - Cloud VPS
+  - Redux
+  - RBAC
+  - RESTful API
 showInProjects: true
 ---
 
-Built a full-stack enterprise resource planning system featuring comprehensive modules for business management including CRM, inventory, sales, purchasing, HR, and more. Implemented with React frontend and Laravel backend for optimal performance and scalability.
+Single-handedly architected and built a massive enterprise SaaS ERP platform. Features comprehensive modules for Finance (Sales, Purchases, Treasury), Advanced Stock Control with multi-warehouse support, CRM & Pipeline, and full HR management. Includes granular RBAC, dynamic analytics dashboards, and customizable documents — all powered by 140+ database tables.

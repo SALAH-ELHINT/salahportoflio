@@ -1,14 +1,15 @@
 ---
-date: '3'
+date: '4'
 title: 'OHM - INRH Portal'
 cover: './ohm-portal.png'
 external: 'https://ohm.ma/'
 tech:
   - Angular
-  - Strapi
+  - Strapi CMS
   - TypeScript
   - Bootstrap
+  - SCSS
   - RESTful API
 ---
 
-A modern web portal built for the Institut National de Recherche Halieutique (INRH). Led frontend development using Angular, implementing responsive design and seamless integration with Strapi CMS. Created an intuitive user interface with dynamic content management capabilities.
+A modern web portal built for the <strong>Institut National de Recherche Halieutique (INRH)</strong>, Morocco's National Marine Research Institute. Led frontend development using Angular and TypeScript, implementing pixel-perfect responsive design. Achieved seamless integration with Strapi headless CMS for dynamic content management, clean RESTful API communication, and an intuitive user interface serving scientific and institutional audiences.

@@ -60,13 +60,14 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I'm excited to explore new opportunities in frontend, backend, and full-stack development,
-        leveraging my skills to drive innovation and growth. I'm excited to bring my skills to
-        innovative projects and challenging roles. Whether you have an interesting position, a
-        project in mind, or just want to connect, I'd love to hear from you!
+        I'm always open to new opportunities — whether it's architecting a large-scale SaaS
+        platform, building a multi-tenant enterprise system, developing mobile apps, or contributing
+        to innovative tech teams. I've delivered end-to-end projects for clients in France, Canada,
+        and Morocco, and I'm ready for the next challenge. Whether you have an exciting role, a
+        project in mind, or just want to connect, let's talk!
       </p>
 
-      <a className="email-link" href="mailto:selhint@gmail.com">
+      <a className="email-link" href="mailto:salah.elhint.dev@gmail.com">
         Say Hello
       </a>
     </StyledContactSection>

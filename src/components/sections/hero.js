@@ -61,22 +61,22 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Salah El Hint.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const three = <h3 className="big-heading">I build & scale digital ecosystems.</h3>;
   const four = (
     <p>
-      I'm a Full Stack Developer specializing in modern web technologies and task automation. With a
-      fresh Bachelor's degree in Computer Development from Hassan II University, I bring a strong
-      foundation in building innovative web solutions and a passion for creating efficient,
-      user-centric applications.
+      I'm a Lead Full-Stack Engineer & System Architect who takes end-to-end ownership of complex
+      SaaS platforms, enterprise web systems, and mobile applications — from the first line of code
+      to production deployment. I build for clients in France, Canada, and Morocco, and communicate
+      fluently in English, French, Arabic, and Berber.
     </p>
   );
   const five = (
     <a
       className="email-link"
-      href="https://github.com/SALAH-ELHINT"
+      href="mailto:salah.elhint.dev@gmail.com"
       target="_blank"
       rel="noreferrer">
-      Check out my GitHub!
+      Get In Touch
     </a>
   );
 

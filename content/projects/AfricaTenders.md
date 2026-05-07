@@ -6,8 +6,10 @@ external: 'https://morocco.ai/events/conferences/MoroccoAI-Conference-2022'
 tech:
   - Python
   - NLP
+  - Selenium
   - Data Science
+  - Machine Learning
 showInProjects: true
 ---
 
-First Prize winning project at MoroccoAI 2022 Challenge. Created an automated solution for collecting and structuring public procurement contract data across Africa using advanced NLP and data visualization techniques.
+1st Prize at MoroccoAI Hackathon 2022. Automated platform for scraping and analyzing African government public procurement contracts. Used advanced NLP techniques to extract valuable insights from tender data and make it actionable for financial professionals across the continent.

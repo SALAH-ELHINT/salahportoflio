@@ -116,11 +116,42 @@ const StyledProject = styled.li`
   }
 
   .project-overline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: 10px 0;
     color: var(--green);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
     font-weight: 400;
+
+    .overline-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 2px;
+      background-color: rgba(100, 255, 218, 0.1);
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-size: var(--fz-xxs);
+      font-family: var(--font-mono);
+      white-space: nowrap;
+    }
+
+    .award-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 2px;
+      background-color: rgba(255, 215, 0, 0.1);
+      border: 1px solid gold;
+      color: gold;
+      font-size: var(--fz-xxs);
+      font-family: var(--font-mono);
+      white-space: nowrap;
+    }
   }
 
   .project-title {
@@ -303,6 +334,26 @@ const StyledProject = styled.li`
   }
 `;
 
+// Map project titles to metadata for overline badges
+const PROJECT_META = {
+  'AlloClients SaaS Ecosystem': {
+    label: 'Featured Project',
+    badge: { text: 'Acting CTO · France', type: 'featured' },
+  },
+  'Numa ERP Platform': {
+    label: 'Featured Project',
+    badge: { text: 'Solo Architect · Freelance', type: 'featured' },
+  },
+  'Africa Tenders Platform': {
+    label: 'Featured Project',
+    badge: { text: '🏆 1st Prize MoroccoAI 2022', type: 'award' },
+  },
+  'OHM - INRH Portal': {
+    label: 'Featured Project',
+    badge: { text: 'Archipel Digital · Morocco', type: 'featured' },
+  },
+};
+
 const Featured = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -353,12 +404,23 @@ const Featured = () => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
+            const meta = PROJECT_META[title] || { label: 'Featured Project', badge: null };
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">
+                      <span>{meta.label}</span>
+                      {meta.badge && (
+                        <span
+                          className={
+                            meta.badge.type === 'award' ? 'award-badge' : 'overline-badge'
+                          }>
+                          {meta.badge.text}
+                        </span>
+                      )}
+                    </p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>

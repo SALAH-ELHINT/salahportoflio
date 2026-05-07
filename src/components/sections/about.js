@@ -126,16 +126,18 @@ const About = () => {
   }, []);
 
   const skills = [
-    'JavaScript',
-    'Python',
-    'PHP',
-    'React',
-    'Vue.js',
-    'Laravel',
-    'HTML5 & CSS3',
-    'MongoDB',
-    'SQL',
-    'Git',
+    'React.js / Next.js / Vue.js / Angular',
+    'Laravel / PHP / Node.js',
+    'Python / Django / Selenium',
+    'React Native (Expo) / Capacitor / Flutter',
+    'MySQL / PostgreSQL / MongoDB',
+    'Multi-tenant SaaS & RBAC Architecture',
+    'DevOps: Linux VPS / Nginx / CI/CD',
+    'Cloudflare / Server Management',
+    'REST API Design & Integration',
+    'Web Scraping & Data Pipelines',
+    'PostHog / Data Analytics',
+    'Git / GitHub / Bitbucket / Postman',
   ];
 
   return (
@@ -146,26 +148,33 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Salah, a Full Stack Web Developer passionate about creating impactful
-              digital solutions. My journey in web development has been driven by a constant desire
-              to learn and innovate.
+              Hello! I'm Salah, a Lead Full-Stack Engineer & System Architect based in Casablanca,
+              Morocco. I take absolute end-to-end ownership of complex SaaS platforms, enterprise
+              web systems, and mobile applications — from the first concept to final cloud
+              deployment. My core focus is engineering highly scalable, high-performance digital
+              ecosystems that drive real business growth.
             </p>
 
             <p>
-              I recently completed my Professional Bachelor's degree in Computer Development from
-              Hassan II University, where I honed my skills in software development and computer
-              science. I also hold a specialized diploma in Full Stack Web Development from ISTA
-              NTIC. My professional journey includes valuable experiences as a Frontend Developer at{' '}
-              <a href="https://archipel.ma/">Archipel</a> and as a Data Scientist at{' '}
-              <a href="https://www.idemia.com/">FPM (Idemia)</a>, where I worked on impactful
-              projects that enhanced my technical expertise.
+              Currently pursuing my{' '}
+              <strong>Master's in Software Engineering & Distributed Systems</strong> at Hassan II
+              University, I have a proven track record of single-handedly architecting massive
+              platforms — including a multi-tenant SaaS ecosystem for therapists (
+              <a href="https://allo-clients.com" target="_blank" rel="noreferrer">
+                AlloClients
+              </a>
+              ) and a full enterprise ERP with 140+ database tables (
+              <a href="https://demo.numa.ma/" target="_blank" rel="noreferrer">
+                Numa ERP
+              </a>
+              ). I have delivered successful projects for clients in France, Canada, and Morocco.
             </p>
 
             <p>
-              I specialize in creating robust full-stack applications, web scraping, and task
-              automation, always focusing on creating efficient, scalable solutions. My experience
-              includes developing intuitive user interfaces and implementing data collection
-              solutions that make a real difference.
+              I am also a <strong>1st Prize winner at the MoroccoAI Hackathon 2022</strong>, where I
+              built an NLP-powered platform to scrape and analyze African government procurement
+              tenders. I speak fluent English, French, Arabic, and Berber — making global
+              collaboration seamless.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
@@ -180,11 +189,11 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpeg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Salah El Hint - Lead Full-Stack Engineer"
             />
           </div>
         </StyledPic>

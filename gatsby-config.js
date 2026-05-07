@@ -8,8 +8,8 @@ module.exports = {
   siteMetadata: {
     title: 'Salah El Hint',
     description:
-      'Salah El Hint is a Full Stack Web Developer who specializes in building exceptional digital experiences.',
-    siteUrl: 'https://salahportfolio.com', // No trailing slash allowed!
+      'Salah El Hint is a Lead Full-Stack Engineer & System Architect specializing in SaaS platforms, enterprise ERP systems, and mobile applications. 1st Prize MoroccoAI Hackathon 2022 winner. Based in Casablanca, Morocco — delivering for clients in France, Canada & Morocco.',
+    siteUrl: 'https://portfoliosalah.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@salah-elhint',
   },
