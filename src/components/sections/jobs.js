@@ -198,26 +198,14 @@ const Jobs = () => {
         location: 'France · Remote',
         range: 'Oct 2025 – Present',
         url: 'https://allo-clients.com',
-        tech: [
-          'Laravel',
-          'React.js',
-          'MySQL',
-          'Multi-tenant SaaS',
-          'RBAC',
-          'DevOps',
-          'Cloud VPS',
-          'Nginx',
-          'Cloudflare',
-        ],
+        tech: ['Laravel', 'React.js', 'MySQL', 'Multi-tenant SaaS', 'RBAC', 'DevOps', 'Cloud VPS', 'Nginx', 'Cloudflare'],
       },
       html: `<ul>
-        <li>Served as Lead Developer & Acting CTO, spearheading the complete design and development of the AlloClients technical ecosystem — an integrated platform connecting a high-traffic public booking directory with a SaaS management app for independent therapists.</li>
-        <li><strong>Platforms:</strong> <a href="https://allo-therapeute.fr" target="_blank" rel="noreferrer">allo-therapeute.fr</a> · <a href="https://allo-clients.com" target="_blank" rel="noreferrer">allo-clients.com</a> · <a href="https://app.allo-clients.com" target="_blank" rel="noreferrer">app.allo-clients.com</a></li>
-        <li><strong>Multi-tenant SaaS Architecture:</strong> Designed a system connecting the booking platform with the practitioner management dashboard, ensuring seamless data synchronization.</li>
-        <li><strong>Full-Stack Development:</strong> Built the complete frontend (React.js) and backend (Laravel), engineering the core business logic for appointment handling and data management.</li>
-        <li><strong>Automated Scheduling:</strong> Created an automated appointment scheduling system and optimized the overall data flow within the application.</li>
-        <li><strong>DevOps & Cloud:</strong> Configured and optimized cloud infrastructure and deployment pipelines, managing Linux VPS servers, databases, Nginx, and Cloudflare security.</li>
-        <li><strong>Data Analytics:</strong> Built a core analytics system to track platform usage, analyze user behavior, and drive data-informed product improvements.</li>
+        <li><strong>Architected 3 live, interconnected platforms</strong> from zero: a public booking directory (<a href="https://allo-therapeute.fr" target="_blank" rel="noreferrer">allo-therapeute.fr</a>), a marketing site, and a full SaaS management app (<a href="https://app.allo-clients.com" target="_blank" rel="noreferrer">app.allo-clients.com</a>) serving independent therapists across France.</li>
+        <li><strong>Sole technical decision-maker</strong> (acting CTO) responsible for system architecture, API design, database schema, UX, and cloud infrastructure.</li>
+        <li>Built a <strong>multi-tenant RBAC scheduling system</strong> that automates appointment management and syncs data in real time across all 3 platforms.</li>
+        <li>Deployed and secured the full stack on <strong>Linux VPS with Nginx & Cloudflare</strong> zero-downtime rollouts, hardened security, scalable infrastructure.</li>
+        <li>Integrated a <strong>behavioral analytics layer</strong> to track user journeys and drive data-informed product iterations.</li>
       </ul>`,
     },
     {
@@ -230,12 +218,11 @@ const Jobs = () => {
         tech: ['Laravel', 'React.js', 'React Native', 'MySQL', 'REST API', 'DevOps', 'Cloud VPS'],
       },
       html: `<ul>
-        <li>Acted as a core Full Stack Developer, taking complete ownership of multiple web, mobile, and SaaS applications from concept to deployment. Successfully delivered high-impact projects including <strong>Klaid</strong>, <strong>ZemExpress</strong>, <strong>Wifina</strong>, and <strong>Isovea</strong>.</li>
-        <li><strong>Architecture & End-to-End Development:</strong> Architected scalable frontend and backend systems for multi-tenant SaaS, web, and mobile platforms. Orchestrated services, managed data pipelines, and built infrastructures designed for future growth.</li>
-        <li><strong>Database & Analytics:</strong> Engineered highly efficient database structures and optimized complex queries. Built comprehensive tracking systems to analyze user behavior and drive data-informed improvements.</li>
-        <li><strong>Client Management & Product Ownership:</strong> Held full technical responsibility across the project lifecycle. Conducted direct client consultations to translate business requirements into actionable digital solutions.</li>
-        <li><strong>Mobile Engineering & APIs:</strong> Built and integrated robust backend APIs with mobile applications, ensuring seamless, real-time data flow across interconnected platforms.</li>
-        <li><strong>DevOps & Cloud Deployment:</strong> Managed the complete deployment lifecycle — configured server infrastructures for absolute security, high availability, and continuous scalability.</li>
+        <li><strong>Shipped 4 client products to production</strong>: Klaid, ZemExpress, Wifina, and Isovea each delivered from specs to live deployment.</li>
+        <li>Owned the <strong>entire technical lifecycle</strong> per project: architecture, full-stack development, API design, mobile integration, and cloud deployment.</li>
+        <li>Served as the <strong>direct technical contact for clients</strong> translating business requirements into clean, scalable implementations without middle layers.</li>
+        <li>Built and integrated <strong>React Native mobile apps</strong> with Laravel backends, ensuring real-time data flow and cross-platform stability.</li>
+        <li>Configured <strong>production-grade VPS environments</strong> with security hardening, performance optimization, and continuous availability for each project.</li>
       </ul>`,
     },
     {
@@ -244,25 +231,15 @@ const Jobs = () => {
         company: 'Numa',
         location: 'Remote · Freelance',
         range: 'Sep 2024 – Feb 2025',
-        url: '#',
-        tech: [
-          'Laravel',
-          'React.js',
-          'MySQL (140+ Tables)',
-          'Redux',
-          'Cloud VPS',
-          'RBAC',
-          'RESTful API',
-        ],
+        url: 'https://demo.numa.ma/',
+        tech: ['Laravel', 'React.js', 'MySQL (140+ Tables)', 'Redux', 'Cloud VPS', 'RBAC', 'RESTful API'],
       },
       html: `<ul>
-        <li>Designed, architected, and single-handedly developed <strong>Numa ERP</strong> — a massive, highly competitive SaaS ERP platform tailored for enterprise management. Took absolute ownership of the entire product lifecycle from UI/UX to deployment.</li>
-        <li><strong>Massive Database Architecture:</strong> Designed a complex, scalable database with <strong>over 140 tables</strong> to support intricate business logic and robust multi-tenant SaaS capabilities.</li>
-        <li><strong>End-to-End UI/UX & Frontend:</strong> Designed every screen and user flow. Built a dynamic, responsive frontend using React.js, ensuring lightning-fast navigation for enterprise operations.</li>
-        <li><strong>High-Performance Backend:</strong> Programmed a secure API and backend using Laravel, engineered to handle heavy data processing and complex relational queries.</li>
-        <li><strong>Enterprise Modules:</strong> Finance & Operations (Sales, Purchases, Treasury), Advanced Stock Control with multi-warehouse support, CRM & Pipeline, and a complete HR suite (attendance, payroll, expenses).</li>
-        <li><strong>Admin, Security & Analytics:</strong> Developed a granular Role-Based Access Control (RBAC) system, dynamic dashboards with deep analytics, and customizable document styling.</li>
-        <li><strong>DevOps & Deployment:</strong> Managed the full deployment pipeline on Cloud VPS, optimizing server architecture for high availability and continuous scalability.</li>
+        <li><strong>Solo-built a full enterprise SaaS ERP</strong> every module, every table, evy line of code. No team. No shortcuts.</li>
+        <li>Designed a <strong>140+ table relational database</strong> to model complex, interdependent business logic across multiple enterprise domains.</li>
+        <li>Built a complete suite of enterprise modules: <strong>Finance & Treasury</strong> (sales, purchases, checks), <strong>Multi-warehouse Inventory</strong>, <strong>CRM & Pipeline</strong>, and a full <strong>HR suite</strong> (attendance, payroll, expenses).</li>
+        <li>Implemented <strong>granular Role-Based Access Control (RBAC)</strong> with dynamic permission management ensuring data isolation between tenants and user roles.</li>
+        <li>Delivered a <strong>real-time analytics dashboard</strong> and customizable document engine (invoices, quotes, purchase orders) on top of a high-performance Laravel + React.js stack.</li>
       </ul>`,
     },
     {
@@ -272,24 +249,13 @@ const Jobs = () => {
         location: 'Casablanca, Morocco · On-site',
         range: 'Jan 2024 – Aug 2024',
         url: 'https://archipel.group',
-        tech: [
-          'Angular',
-          'Vue.js',
-          'Tailwind CSS',
-          'Strapi CMS',
-          'TypeScript',
-          'SCSS',
-          'Bootstrap',
-          'REST API',
-        ],
+        tech: ['Angular', 'Vue.js', 'Tailwind CSS', 'Strapi CMS', 'TypeScript', 'SCSS', 'Bootstrap', 'REST API'],
       },
       html: `<ul>
-        <li>Developed dynamic frontends using <strong>Angular</strong> and <strong>Vue.js</strong>, ensuring robust performance and seamless user experience across multiple client platforms.</li>
-        <li>Integrated REST APIs and managed data flow between frontend and backend, optimizing system architecture for scalability and efficiency.</li>
-        <li>Worked with <strong>Strapi</strong> headless CMS to build and integrate content management systems with the frontend, ensuring smooth API communication and data handling.</li>
-        <li>Converted designs from PSD, XD, and <strong>Figma</strong> into pixel-perfect, fully responsive code adhering to modern web standards.</li>
-        <li>Leveraged <strong>Tailwind CSS</strong> and Bootstrap to accelerate development while maintaining design consistency and responsiveness across platforms.</li>
-        <li>Wrote efficient, maintainable styles using <strong>SCSS</strong>, fixing UI bugs in Angular projects and implementing best practices for web performance, accessibility, and SEO.</li>
+        <li>Developed <strong>multiple client-facing frontends</strong> using Angular and Vue.js pixel-perfect from Figma/XD designs, responsive across all screen sizes.</li>
+        <li>Integrated <strong>Strapi headless CMS</strong> with multiple frontend projects enabling clients to manage content without developer intervention.</li>
+        <li>Connected frontends to <strong>RESTful backends</strong>, managing complex data flows and optimizing rendering performance for high-traffic pages.</li>
+        <li>Enforced <strong>web performance, accessibility, and SEO best practices</strong> across all projects contributing to measurable improvements in Core Web Vitals.</li>
       </ul>`,
     },
     {
@@ -302,10 +268,9 @@ const Jobs = () => {
         tech: ['WordPress', 'WooCommerce', 'PHP', 'CSS', 'Custom Plugins'],
       },
       html: `<ul>
-        <li>Developed and enhanced the company's web presence for a digital printing business using <strong>WordPress</strong> and <strong>WooCommerce</strong>.</li>
-        <li>Set up and managed products, custom themes, and plugins to ensure the seamless functioning of the e-commerce platform.</li>
-        <li>Created, customized, and managed website content including product pages and category structures.</li>
-        <li>Collaborated with cross-functional teams to deliver high-quality web solutions aligned with business requirements.</li>
+        <li>Built and maintained a <strong>WooCommerce e-commerce platform</strong> for a digital printing business products, categories, and custom checkout flows.</li>
+        <li>Developed <strong>custom WordPress plugins</strong> to extend platform functionality beyond out-of-the-box capabilities.</li>
+        <li>Optimized site performance and product management workflows, reducing manual workload for the business operations team.</li>
       </ul>`,
     },
     {
@@ -315,13 +280,12 @@ const Jobs = () => {
         location: 'Canada · Remote',
         range: 'Dec 2023 – Jan 2024',
         url: '#',
-        tech: ['React Native', 'Expo', 'API Integration', 'WebSocket', 'Server Communication'],
+        tech: ['React Native', 'Expo', 'WebSocket', 'REST API', 'Real-time Communication'],
       },
       html: `<ul>
-        <li>Designed and developed an innovative <strong>mobile application using React Native Expo</strong> enabling seamless real-time connectivity with industrial machines.</li>
-        <li>Implemented features that allow users to display, monitor, and control machines through a dedicated server, ensuring efficient and effective management.</li>
-        <li>Built a robust client-server communication layer for real-time data flow between the mobile app and the connected infrastructure.</li>
-        <li>Integrated complex control functionalities ensuring a smooth user experience while maintaining precise, reliable control over connected machines.</li>
+        <li>Built a <strong>React Native Expo mobile app</strong> that enables real-time remote monitoring and control of industrial machinery over a custom server protocol.</li>
+        <li>Engineered <strong>real-time WebSocket communication</strong> between the app and machine controllers sub-second response times with reliable state sync.</li>
+        <li>Designed an intuitive control interface for non-technical operators, reducing machine interaction errors during live operations.</li>
       </ul>`,
     },
     {
@@ -331,13 +295,12 @@ const Jobs = () => {
         location: 'Casablanca, Morocco · On-site',
         range: 'Oct 2023 – Dec 2023',
         url: 'https://idemia.com',
-        tech: ['Python', 'Selenium', 'BeautifulSoup', 'Data Pipelines', 'Data Processing'],
+        tech: ['Python', 'Selenium', 'BeautifulSoup', 'Data Pipelines', 'Pandas'],
       },
       html: `<ul>
-        <li>Executed automated <strong>web scraping</strong> operations across diverse sources using Python and Selenium to efficiently extract, structure, and deliver actionable information.</li>
-        <li>Managed and refined complex datasets, enforcing strict standards of data accuracy, integrity, and reliability across internal systems.</li>
-        <li>Optimized core data management workflows by systematically processing and manipulating raw data to drive overall operational efficiency.</li>
-        <li>Built and maintained data pipelines to automate the collection and transformation of large-scale structured and unstructured data.</li>
+        <li>Built <strong>automated Python scraping pipelines</strong> (Selenium + BeautifulSoup) that replaced hours of manual data collection with scheduled, zero-touch extraction.</li>
+        <li>Processed and <strong>cleaned large-scale datasets</strong> to meet strict accuracy and integrity standards required for enterprise-level data operations.</li>
+        <li>Delivered <strong>structured, analysis-ready data outputs</strong> that directly fed into downstream reporting and decision-making workflows.</li>
       </ul>`,
     },
     {
@@ -347,12 +310,12 @@ const Jobs = () => {
         location: 'Quebec, Canada · Remote',
         range: 'Apr 2023 – May 2023',
         url: '#',
-        tech: ['Python', 'wxPython', 'Desktop App', 'Data Acquisition', 'Hardware Sensors'],
+        tech: ['Python', 'wxPython', 'Serial Communication', 'Desktop App', 'Hardware Sensors'],
       },
       html: `<ul>
-        <li>Designed and developed a robust <strong>desktop application for real-time data acquisition</strong> utilizing Python and the wxPython framework.</li>
-        <li>Engineered an efficient data processing pipeline to systematically collect, parse, and visualize live data streams from various hardware sensors.</li>
-        <li>Collaborated with the core engineering team to design intuitive user interfaces, optimize software architecture, and streamline complex data handling workflows.</li>
+        <li>Built a <strong>Python desktop application</strong> (wxPython) for real-time data acquisition from industrial hardware sensors replacing a manual logging process.</li>
+        <li>Engineered a <strong>data pipeline that parses, visualizes, and logs live sensor streams</strong> making raw hardware data immediately actionable for engineers.</li>
+        <li>Collaborated with the hardware engineering team to align the software interface with physical machine behavior and edge-case failure modes.</li>
       </ul>`,
     },
   ];
@@ -376,20 +339,16 @@ const Jobs = () => {
       tabs.current[tabFocus].focus();
       return;
     }
-    // If we're at the end, go to the start
     if (tabFocus >= tabs.current.length) {
       setTabFocus(0);
     }
-    // If we're at the start, move to the end
     if (tabFocus < 0) {
       setTabFocus(tabs.current.length - 1);
     }
   };
 
-  // Only re-run the effect if tabFocus changes
   useEffect(() => focusTab(), [tabFocus]);
 
-  // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {
     switch (e.key) {
       case KEY_CODES.ARROW_UP: {
@@ -397,13 +356,11 @@ const Jobs = () => {
         setTabFocus(tabFocus - 1);
         break;
       }
-
       case KEY_CODES.ARROW_DOWN: {
         e.preventDefault();
         setTabFocus(tabFocus + 1);
         break;
       }
-
       default: {
         break;
       }
@@ -470,9 +427,7 @@ const Jobs = () => {
                     {tech && tech.length > 0 && (
                       <div className="tech-stack">
                         {tech.map((t, j) => (
-                          <span key={j} className="tech-tag">
-                            {t}
-                          </span>
+                          <span key={j} className="tech-tag">{t}</span>
                         ))}
                       </div>
                     )}

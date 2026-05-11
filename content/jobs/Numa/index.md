@@ -7,7 +7,7 @@ range: 'September 2024 - February 2025'
 url: '#'
 ---
 
-- Designed, architected, and single-handedly developed **Numa ERP** — a massive, highly competitive SaaS ERP platform tailored for enterprise management. Took absolute ownership of the entire product lifecycle from UI/UX conceptualization to complex database design, full-stack programming, and cloud deployment.
+- Designed, architected, and single-handedly developed **Numa ERP** a massive, highly competitive SaaS ERP platform tailored for enterprise management. Took absolute ownership of the entire product lifecycle from UI/UX conceptualization to complex database design, full-stack programming, and cloud deployment.
 - **Massive Database Architecture:** Designed a complex, scalable database with **over 140 tables** to support intricate business logic and robust multi-tenant SaaS capabilities.
 - **End-to-End UI/UX & Frontend:** Designed every screen and user flow. Built a dynamic, responsive frontend using React.js, ensuring lightning-fast navigation for enterprise operations.
 - **High-Performance Backend:** Programmed a secure API and backend using Laravel, engineered to handle heavy data processing and complex relational queries.

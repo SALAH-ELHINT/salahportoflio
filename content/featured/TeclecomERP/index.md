@@ -6,11 +6,11 @@ external: 'https://demo.numa.ma/'
 tech:
   - React.js
   - Laravel
-  - MySQL (140+ Tables)
-  - Cloud VPS
+  - MySQL · 140+ Tables
   - Redux
-  - RESTful API
+  - Cloud VPS
   - RBAC
+  - RESTful API
 ---
 
-A massive enterprise SaaS ERP platform developed entirely single-handedly. Built complex interconnected modules for Inventory, CRM, HR, Finance & Treasury with granular Role-Based Access Control (RBAC). The system features <strong>over 140 database tables</strong>, providing a highly scalable and robust enterprise management experience with dynamic dashboards, real-time analytics, and customizable document styling.
+<strong>Problem:</strong> A growing enterprise needed a custom ERP off-the-shelf solutions were too rigid, too expensive, and didn't fit their workflow.<br/><br/><strong>Solution:</strong> Single-handedly designed and built a <strong>full-scale enterprise SaaS ERP</strong> from the first whiteboard sketch to production deployment. The system spans <strong>140+ relational database tables</strong> and includes complete modules for <strong>Finance & Treasury</strong>, <strong>Multi-warehouse Inventory</strong>, <strong>CRM & Sales Pipeline</strong>, <strong>HR & Payroll</strong>, and a granular <strong>Role-Based Access Control</strong> system. Delivered with real-time dashboards and a customizable document engine for invoices, quotes, and purchase orders.

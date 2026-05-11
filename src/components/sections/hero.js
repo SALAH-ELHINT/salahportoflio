@@ -61,13 +61,16 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Salah El Hint.</h2>;
-  const three = <h3 className="big-heading">I build & scale digital ecosystems.</h3>;
+  const three = (
+    <h3 className="big-heading">I architect, ship, and scale complex systems. End to end.</h3>
+  );
   const four = (
     <p>
-      I'm a Lead Full-Stack Engineer & System Architect who takes end-to-end ownership of complex
-      SaaS platforms, enterprise web systems, and mobile applications — from the first line of code
-      to production deployment. I build for clients in France, Canada, and Morocco, and communicate
-      fluently in English, French, Arabic, and Berber.
+      Lead Full-Stack Engineer, DevOps & System Architect. I take complete ownership of enterprise
+      products from massive database architectures and AI-driven data pipelines to automated cloud
+      deployments. I deliver high-performance SaaS platforms, ERP systems, and mobile apps for
+      international clients in <strong>France</strong>, <strong>Canada</strong>, and{' '}
+      <strong>Morocco</strong>. <strong>1st Prize MoroccoAI Hackathon 2022.</strong>
     </p>
   );
   const five = (

@@ -12,4 +12,4 @@ tech:
   - RESTful API
 ---
 
-A modern web portal built for the <strong>Institut National de Recherche Halieutique (INRH)</strong>, Morocco's National Marine Research Institute. Led frontend development using Angular and TypeScript, implementing pixel-perfect responsive design. Achieved seamless integration with Strapi headless CMS for dynamic content management, clean RESTful API communication, and an intuitive user interface serving scientific and institutional audiences.
+<strong>Problem:</strong> Morocco's National Marine Research Institute (INRH) needed a modern web portal that non-technical staff could update independently, without relying on developers for every content change.<br/><br/><strong>Solution:</strong> Led frontend development using <strong>Angular & TypeScript</strong>, delivering a fully responsive, pixel-perfect interface integrated with a <strong>Strapi headless CMS</strong>. Content editors can now manage all portal data through a clean admin interface zero developer involvement required for day-to-day updates. Optimized for performance, accessibility, and SEO for institutional audiences.

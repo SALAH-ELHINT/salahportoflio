@@ -60,11 +60,10 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        I'm always open to new opportunities — whether it's architecting a large-scale SaaS
-        platform, building a multi-tenant enterprise system, developing mobile apps, or contributing
-        to innovative tech teams. I've delivered end-to-end projects for clients in France, Canada,
-        and Morocco, and I'm ready for the next challenge. Whether you have an exciting role, a
-        project in mind, or just want to connect, let's talk!
+        Whether you're looking for a senior eineer who can own a product end-to-end, a technical
+        lead for your next SaaS build, or a developer who communicates clearly with both engineers
+        and stakeholders let's talk. I'm available for remote full-time roles and freelance
+        projects.
       </p>
 
       <a className="email-link" href="mailto:salah.elhint.dev@gmail.com">

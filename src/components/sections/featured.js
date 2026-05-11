@@ -346,7 +346,7 @@ const PROJECT_META = {
   },
   'Africa Tenders Platform': {
     label: 'Featured Project',
-    badge: { text: '🏆 1st Prize MoroccoAI 2022', type: 'award' },
+    badge: { text: '1st Prize MoroccoAI 2022', type: 'award' },
   },
   'OHM - INRH Portal': {
     label: 'Featured Project',

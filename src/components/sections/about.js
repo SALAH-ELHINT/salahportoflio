@@ -129,15 +129,13 @@ const About = () => {
     'React.js / Next.js / Vue.js / Angular',
     'Laravel / PHP / Node.js',
     'Python / Django / Selenium',
-    'React Native (Expo) / Capacitor / Flutter',
+    'React Native (Expo) / Flutter',
     'MySQL / PostgreSQL / MongoDB',
-    'Multi-tenant SaaS & RBAC Architecture',
-    'DevOps: Linux VPS / Nginx / CI/CD',
-    'Cloudflare / Server Management',
+    'Multi-tenant SaaS & RBAC',
+    'Linux VPS / Nginx / CI/CD',
     'REST API Design & Integration',
     'Web Scraping & Data Pipelines',
-    'PostHog / Data Analytics',
-    'Git / GitHub / Bitbucket / Postman',
+    'Cloudflare / PostHog / Analytics',
   ];
 
   return (
@@ -148,36 +146,38 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Salah, a Lead Full-Stack Engineer & System Architect based in Casablanca,
-              Morocco. I take absolute end-to-end ownership of complex SaaS platforms, enterprise
-              web systems, and mobile applications — from the first concept to final cloud
-              deployment. My core focus is engineering highly scalable, high-performance digital
-              ecosystems that drive real business growth.
+              I'm Salah a Lead Full-Stack Engineer & System Architect based in{' '}
+              <strong>Casablanca, Morocco</strong>. I build and own entire products:{' '}
+              database design, backend APIs, frontend UIs, mobile apps, and cloud infrastructure
+              all under one roof.
             </p>
 
             <p>
-              Currently pursuing my{' '}
-              <strong>Master's in Software Engineering & Distributed Systems</strong> at Hassan II
-              University, I have a proven track record of single-handedly architecting massive
-              platforms — including a multi-tenant SaaS ecosystem for therapists (
-              <a href="https://allo-clients.com" target="_blank" rel="noreferrer">
-                AlloClients
-              </a>
-              ) and a full enterprise ERP with 140+ database tables (
-              <a href="https://demo.numa.ma/" target="_blank" rel="noreferrer">
-                Numa ERP
-              </a>
-              ). I have delivered successful projects for clients in France, Canada, and Morocco.
+              My biggest projects to date:{' '}
+              <strong>
+                <a href="https://allo-clients.com" target="_blank" rel="noreferrer">
+                  AlloClients
+                </a>
+              </strong>{' '}
+              a live multi-tenant SaaS ecosystem with 3 interconnected platforms (acting as CTO), and{' '}
+              <strong>
+                <a href="https://demo.numa.ma/" target="_blank" rel="noreferrer">
+                  Numa ERP
+                </a>
+              </strong>{' '}
+              a fully solo-built enterprise ERP with <strong>140+ database tables</strong>,
+              covering Finance, CRM, HR, Inventory, and RBAC. Delivered for clients in{' '}
+              <strong>France, Canada & Morocco</strong>.
             </p>
 
             <p>
-              I am also a <strong>1st Prize winner at the MoroccoAI Hackathon 2022</strong>, where I
-              built an NLP-powered platform to scrape and analyze African government procurement
-              tenders. I speak fluent English, French, Arabic, and Berber — making global
-              collaboration seamless.
+              <strong>1st Prize MoroccoAI Hackathon 2022</strong> for building an
+              NLP-powered pipeline to scrape and analyze African government procurement data.
+              Currently completing a <strong>Master's in Software Engineering & Distributed
+              Systems</strong> at Hassan II University.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>Technologies I work with daily:</p>
           </div>
 
           <ul className="skills-list">
