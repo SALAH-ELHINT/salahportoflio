@@ -12,7 +12,7 @@ tech:
   - REST API
   - Tailwind CSS
 company: 'GetProcure'
-showInProjects: true
+showInProjects: false
 featured: true
 ---
 

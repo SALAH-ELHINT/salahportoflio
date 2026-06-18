@@ -1,6 +1,7 @@
 ---
 date: '4'
 title: 'OHM - INRH Portal'
+showInFeatured: false
 cover: './ohm-portal.png'
 external: 'https://ohm.ma/'
 tech:

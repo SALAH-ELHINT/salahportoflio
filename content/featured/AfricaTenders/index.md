@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Africa Tenders Platform'
-cover: './tenders-platform.png'
+cover: './MoroccoAI.jpg'
 github: 'https://github.com/SALAH-ELHINT/morocco-ai-challenge'
 external: 'https://morocco.ai/events/conferences/MoroccoAI-Conference-2022'
 tech:

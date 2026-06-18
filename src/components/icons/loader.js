@@ -6,9 +6,18 @@ const IconLoader = () => (
     <g>
       <g id="S" transform="translate(11.000000, 5.000000)">
         <path
-          d="M28.5,38.2c0-4.8,3.9-8.7,8.7-8.7c4.8,0,8.7,3.9,8.7,8.7c0,2.4-1,4.6-2.6,6.2l-6.2,6.2
-            c-1.6,1.6-2.6,3.8-2.6,6.2c0,4.8,3.9,8.7,8.7,8.7"
-          fill="currentColor"
+          d="M 48,29
+             C 48,29 44,24 39,24
+             C 33,24 30,28 30,32
+             C 30,38 37,40 41,42
+             C 46,45 49,49 49,55
+             C 49,62 44,66 39,66
+             C 32,66 29,61 29,61"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <path

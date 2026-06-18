@@ -12,7 +12,7 @@ tech:
   - REST API
   - Node.js
 company: 'InfiniPrint'
-showInProjects: true
+showInProjects: false
 featured: true
 cover: './infiniprint.png'
 ---

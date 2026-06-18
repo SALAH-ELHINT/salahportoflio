@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'AlloClients SaaS Ecosystem'
-cover: './erp-dashboard.png'
+cover: './AlloClients.jpg'
 external: 'https://allo-clients.com'
 github: ''
 tech:

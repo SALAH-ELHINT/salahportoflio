@@ -9,7 +9,7 @@ tech:
   - Selenium
   - Data Science
   - Machine Learning
-showInProjects: true
+showInProjects: false
 ---
 
 1st Prize at MoroccoAI Hackathon 2022. Automated platform for scraping and analyzing African government public procurement contracts. Used advanced NLP techniques to extract valuable insights from tender data and make it actionable for financial professionals across the continent.

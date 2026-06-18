@@ -66,11 +66,11 @@ const Hero = () => {
   );
   const four = (
     <p>
-      Lead Full-Stack Engineer, DevOps & System Architect. I take complete ownership of enterprise
-      products from massive database architectures and AI-driven data pipelines to automated cloud
-      deployments. I deliver high-performance SaaS platforms, ERP systems, and mobile apps for
-      international clients in <strong>France</strong>, <strong>Canada</strong>, and{' '}
-      <strong>Morocco</strong>. <strong>1st Prize MoroccoAI Hackathon 2022.</strong>
+      I am a Full-Stack Engineer and Software Developer who loves building complete web, mobile, and
+      SaaS applications. I handle the entire lifecycle from secure database design and back-end APIs
+      to interactive front-end interfaces, cloud DevOps, and smart AI automations. Highly adaptable,
+      I build and scale high-performance products for startups and international companies across
+      France, Canada, and Morocco.
     </p>
   );
   const five = (

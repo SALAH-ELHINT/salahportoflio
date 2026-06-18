@@ -10,7 +10,7 @@ tech:
   - RBAC
   - Nginx
   - Cloudflare
-showInProjects: true
+showInProjects: false
 ---
 
 Built the complete SaaS management application for independent therapists at AlloClients. Features include multi-tenant architecture, automated appointment scheduling, RBAC system, client management, and a real-time data analytics dashboard. Connected seamlessly with the public booking directory at allo-therapeute.fr.

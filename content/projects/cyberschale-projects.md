@@ -1,6 +1,6 @@
 ---
 date: '2025-01-10'
-title: 'ZemExpress & Klaid (CyberScale Projects)'
+title: 'Klaid SaaS & Isovea (CyberScale)'
 external: 'https://cyber-scale.me/etudes-de-cas'
 tech:
   - Laravel
@@ -12,4 +12,4 @@ tech:
 showInProjects: true
 ---
 
-Delivered multiple full-stack web and mobile applications as part of the CyberScale agency (France). Projects include ZemExpress (logistics platform), Klaid (SaaS), Wifina (connectivity service), and Isovea (enterprise app). Managed client communications, full-stack architecture, cloud deployment, and production pipelines for each project end-to-end.
+Delivered multiple full-stack web and mobile applications as part of the CyberScale agency (France). Engineered Klaid (a multi-tenant SaaS workspace for client collaboration) and Isovea (an enterprise application). Managed client consultations, full-stack architecture, cloud deployments, and production pipelines end-to-end.

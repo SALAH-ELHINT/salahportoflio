@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Salah El Hint',
     description:
-      'Salah El Hint is a Lead Full-Stack Engineer & System Architect specializing in SaaS platforms, enterprise ERP systems, and mobile applications. 1st Prize MoroccoAI Hackathon 2022 winner. Based in Casablanca, Morocco delivering for clients in France, Canada & Morocco.',
+      'Salah El Hint is a versatile Full-Stack Engineer and Software Developer who designs, ships, and scales complete web, mobile, and SaaS applications globally for startups and enterprise clients.',
     siteUrl: 'https://portfoliosalah.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@salah-elhint',

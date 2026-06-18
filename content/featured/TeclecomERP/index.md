@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Numa ERP Platform'
-cover: './erp-dashboard.png'
+cover: './numa.jpg'
 external: 'https://demo.numa.ma/'
 tech:
   - React.js

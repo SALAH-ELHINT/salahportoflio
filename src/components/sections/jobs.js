@@ -198,14 +198,24 @@ const Jobs = () => {
         location: 'France · Remote',
         range: 'Oct 2025 – Present',
         url: 'https://allo-clients.com',
-        tech: ['Laravel', 'React.js', 'MySQL', 'Multi-tenant SaaS', 'RBAC', 'DevOps', 'Cloud VPS', 'Nginx', 'Cloudflare'],
+        tech: [
+          'Laravel',
+          'React.js',
+          'MySQL',
+          'Multi-tenant SaaS',
+          'RBAC',
+          'DevOps',
+          'Cloud VPS',
+          'Nginx',
+          'Cloudflare',
+        ],
       },
       html: `<ul>
-        <li><strong>Architected 3 live, interconnected platforms</strong> from zero: a public booking directory (<a href="https://allo-therapeute.fr" target="_blank" rel="noreferrer">allo-therapeute.fr</a>), a marketing site, and a full SaaS management app (<a href="https://app.allo-clients.com" target="_blank" rel="noreferrer">app.allo-clients.com</a>) serving independent therapists across France.</li>
-        <li><strong>Sole technical decision-maker</strong> (acting CTO) responsible for system architecture, API design, database schema, UX, and cloud infrastructure.</li>
-        <li>Built a <strong>multi-tenant RBAC scheduling system</strong> that automates appointment management and syncs data in real time across all 3 platforms.</li>
-        <li>Deployed and secured the full stack on <strong>Linux VPS with Nginx & Cloudflare</strong> zero-downtime rollouts, hardened security, scalable infrastructure.</li>
-        <li>Integrated a <strong>behavioral analytics layer</strong> to track user journeys and drive data-informed product iterations.</li>
+        <li><strong>Architected and deployed a multi-tenant SaaS booking ecosystem</strong>, consisting of a public directory (<a href="https://allo-therapeute.fr" target="_blank" rel="noreferrer">allo-therapeute.fr</a>), a client dashboard (<a href="https://app.allo-clients.com" target="_blank" rel="noreferrer">app.allo-clients.com</a>), and a marketing platform, currently used by <strong>thousands of therapists daily</strong>.</li>
+        <li><strong>Served as the sole technical decision-maker and acting CTO</strong>, owning database structures, API design, security implementations, and system deployments.</li>
+        <li>Built an automated, multi-tenant scheduling system and calendar synchronizer with granular role-based access control (RBAC).</li>
+        <li>Configured and maintained high-availability cloud servers (Linux VPS, Nginx, Cloudflare) with automated backup mechanisms and zero-downtime releases.</li>
+        <li>Implemented analytics and user tracking tools to capture behavior insights and drive customer experience improvements.</li>
       </ul>`,
     },
     {
@@ -218,11 +228,11 @@ const Jobs = () => {
         tech: ['Laravel', 'React.js', 'React Native', 'MySQL', 'REST API', 'DevOps', 'Cloud VPS'],
       },
       html: `<ul>
-        <li><strong>Shipped 4 client products to production</strong>: Klaid, ZemExpress, Wifina, and Isovea each delivered from specs to live deployment.</li>
-        <li>Owned the <strong>entire technical lifecycle</strong> per project: architecture, full-stack development, API design, mobile integration, and cloud deployment.</li>
-        <li>Served as the <strong>direct technical contact for clients</strong> translating business requirements into clean, scalable implementations without middle layers.</li>
-        <li>Built and integrated <strong>React Native mobile apps</strong> with Laravel backends, ensuring real-time data flow and cross-platform stability.</li>
-        <li>Configured <strong>production-grade VPS environments</strong> with security hardening, performance optimization, and continuous availability for each project.</li>
+        <li><strong>Worked as a Full-Stack Developer at a fast-growing startup</strong>, building, shipping, and maintaining multiple client applications (including Klaid SaaS, ZemExpress, Wifina, and Isovea).</li>
+        <li>Owned the <strong>full development lifecycle</strong> of diverse client projects: from database schema and REST API backend design to front-end interfaces.</li>
+        <li>Communicated directly with international clients to gather software requirements, design specifications, and handle production deployments.</li>
+        <li>Built and integrated React Native mobile applications with Laravel backends, establishing secure endpoints and stable cross-platform performance.</li>
+        <li>Managed and optimized Linux VPS environments, establishing server security guidelines, SSL setups, and performance optimizations.</li>
       </ul>`,
     },
     {
@@ -232,14 +242,22 @@ const Jobs = () => {
         location: 'Remote · Freelance',
         range: 'Sep 2024 – Feb 2025',
         url: 'https://demo.numa.ma/',
-        tech: ['Laravel', 'React.js', 'MySQL (140+ Tables)', 'Redux', 'Cloud VPS', 'RBAC', 'RESTful API'],
+        tech: [
+          'Laravel',
+          'React.js',
+          'MySQL (140+ Tables)',
+          'Redux',
+          'Cloud VPS',
+          'RBAC',
+          'RESTful API',
+        ],
       },
       html: `<ul>
-        <li><strong>Solo-built a full enterprise SaaS ERP</strong> every module, every table, evy line of code. No team. No shortcuts.</li>
-        <li>Designed a <strong>140+ table relational database</strong> to model complex, interdependent business logic across multiple enterprise domains.</li>
-        <li>Built a complete suite of enterprise modules: <strong>Finance & Treasury</strong> (sales, purchases, checks), <strong>Multi-warehouse Inventory</strong>, <strong>CRM & Pipeline</strong>, and a full <strong>HR suite</strong> (attendance, payroll, expenses).</li>
-        <li>Implemented <strong>granular Role-Based Access Control (RBAC)</strong> with dynamic permission management ensuring data isolation between tenants and user roles.</li>
-        <li>Delivered a <strong>real-time analytics dashboard</strong> and customizable document engine (invoices, quotes, purchase orders) on top of a high-performance Laravel + React.js stack.</li>
+        <li><strong>Solo-designed and built a full enterprise SaaS ERP platform</strong>, which is used daily by businesses to run their entire corporate management workflows.</li>
+        <li>Structured a relational database containing <strong>140+ tables</strong>, handling complex relational logic to prevent data inconsistencies.</li>
+        <li>Developed core business modules including Inventory Management, Sales/CRM Pipeline, HR & Payroll, and Finance/Treasury (tracking checks, invoices, and sales).</li>
+        <li>Implemented secure multi-tenant role-based access control (RBAC) to ensure client data isolation and privacy protection.</li>
+        <li>Built live reporting dashboards and automated invoice/quote generation to streamline administrative workflows.</li>
       </ul>`,
     },
     {
@@ -249,7 +267,16 @@ const Jobs = () => {
         location: 'Casablanca, Morocco · On-site',
         range: 'Jan 2024 – Aug 2024',
         url: 'https://archipel.group',
-        tech: ['Angular', 'Vue.js', 'Tailwind CSS', 'Strapi CMS', 'TypeScript', 'SCSS', 'Bootstrap', 'REST API'],
+        tech: [
+          'Angular',
+          'Vue.js',
+          'Tailwind CSS',
+          'Strapi CMS',
+          'TypeScript',
+          'SCSS',
+          'Bootstrap',
+          'REST API',
+        ],
       },
       html: `<ul>
         <li>Developed <strong>multiple client-facing frontends</strong> using Angular and Vue.js pixel-perfect from Figma/XD designs, responsive across all screen sizes.</li>
@@ -427,7 +454,9 @@ const Jobs = () => {
                     {tech && tech.length > 0 && (
                       <div className="tech-stack">
                         {tech.map((t, j) => (
-                          <span key={j} className="tech-tag">{t}</span>
+                          <span key={j} className="tech-tag">
+                            {t}
+                          </span>
                         ))}
                       </div>
                     )}
