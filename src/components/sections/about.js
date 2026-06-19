@@ -648,7 +648,7 @@ const About = () => {
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Salah El Hint - Lead Full-Stack Engineer"
+              alt="Salah ElHint - Lead Full-Stack Engineer"
             />
           </div>
         </StyledPic>
