@@ -8,6 +8,7 @@ import sr from '@utils/sr';
 import { Layout } from '@components';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { trackEvent } from '@services/analytics';
 
 const StyledTableContainer = styled.div`
   margin: 100px -20px;
@@ -198,6 +199,18 @@ const ArchivePage = ({ location, data }) => {
                           {external && (
                             <a
                               href={external}
+                              onClick={() => {
+                                trackEvent('cta_click', {
+                                  name: 'archive_project_external',
+                                  title,
+                                  url: external,
+                                });
+                                trackEvent('external_link_click', {
+                                  url: external,
+                                  title,
+                                  source: 'archive_table',
+                                });
+                              }}
                               aria-label="External Link"
                               target="_blank"
                               rel="noreferrer">
@@ -207,6 +220,13 @@ const ArchivePage = ({ location, data }) => {
                           {github && (
                             <a
                               href={github}
+                              onClick={() =>
+                                trackEvent('github_click', {
+                                  url: github,
+                                  title,
+                                  source: 'archive_table',
+                                })
+                              }
                               aria-label="GitHub Link"
                               target="_blank"
                               rel="noreferrer">
@@ -216,6 +236,19 @@ const ArchivePage = ({ location, data }) => {
                           {ios && (
                             <a
                               href={ios}
+                              onClick={() => {
+                                trackEvent('cta_click', {
+                                  name: 'archive_project_ios',
+                                  title,
+                                  url: ios,
+                                });
+                                trackEvent('external_link_click', {
+                                  url: ios,
+                                  title,
+                                  source: 'archive_table',
+                                  platform: 'ios',
+                                });
+                              }}
                               aria-label="Apple App Store Link"
                               target="_blank"
                               rel="noreferrer">
@@ -225,6 +258,19 @@ const ArchivePage = ({ location, data }) => {
                           {android && (
                             <a
                               href={android}
+                              onClick={() => {
+                                trackEvent('cta_click', {
+                                  name: 'archive_project_android',
+                                  title,
+                                  url: android,
+                                });
+                                trackEvent('external_link_click', {
+                                  url: android,
+                                  title,
+                                  source: 'archive_table',
+                                  platform: 'android',
+                                });
+                              }}
                               aria-label="Google Play Store Link"
                               target="_blank"
                               rel="noreferrer">

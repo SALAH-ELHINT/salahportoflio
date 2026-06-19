@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from '@components/icons';
 import { socialMedia } from '@config';
+import { trackEvent } from '@services/analytics';
 
 const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -81,7 +82,18 @@ const Footer = () => (
         {socialMedia &&
           socialMedia.map(({ name, url }, i) => (
             <li key={i}>
-              <a href={url} aria-label={name}>
+              <a
+                href={url}
+                aria-label={name}
+                onClick={() => {
+                  const eventName =
+                    name.toLowerCase() === 'linkedin'
+                      ? 'linkedin_click'
+                      : name.toLowerCase() === 'github'
+                        ? 'github_click'
+                        : 'external_link_click';
+                  trackEvent(eventName, { url, source: 'footer_mobile_social', name });
+                }}>
                 <Icon name={name} />
               </a>
             </li>
@@ -91,25 +103,55 @@ const Footer = () => (
 
     <StyledCredit tabindex="-1">
       <div className="contact-info">
-        <a href="tel:+212635278125">
+        <a
+          href="tel:+212635278125"
+          onClick={() => trackEvent('phone_click', { phone: '+212635278125', source: 'footer' })}>
           <Icon name="Phone" />
           +212 635-278-125
         </a>
-        <a href="mailto:salah.elhint.dev@gmail.com">
+        <a
+          href="mailto:salah.elhint.dev@gmail.com"
+          onClick={() =>
+            trackEvent('email_click', { email: 'salah.elhint.dev@gmail.com', source: 'footer' })
+          }>
           <Icon name="Email" />
           salah.elhint.dev@gmail.com
         </a>
-        <a href="https://github.com/SALAH-ELHINT">
+        <a
+          href="https://github.com/SALAH-ELHINT"
+          onClick={() =>
+            trackEvent('github_click', { url: 'https://github.com/SALAH-ELHINT', source: 'footer' })
+          }
+          target="_blank"
+          rel="noreferrer">
           <Icon name="GitHub" />
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/salah-elhint-70447925b/">
+        <a
+          href="https://www.linkedin.com/in/salah-elhint-70447925b/"
+          onClick={() =>
+            trackEvent('linkedin_click', {
+              url: 'https://www.linkedin.com/in/salah-elhint-70447925b/',
+              source: 'footer',
+            })
+          }
+          target="_blank"
+          rel="noreferrer">
           <Icon name="Linkedin" />
           LinkedIn
         </a>
       </div>
 
-      <a href="https://www.linkedin.com/in/salah-elhint-70447925b/">
+      <a
+        href="https://www.linkedin.com/in/salah-elhint-70447925b/"
+        onClick={() =>
+          trackEvent('attribution_click', {
+            url: 'https://www.linkedin.com/in/salah-elhint-70447925b/',
+            source: 'footer_attribution',
+          })
+        }
+        target="_blank"
+        rel="noreferrer">
         <div>Designed &amp; Built by Salah El Hint</div>
       </a>
     </StyledCredit>

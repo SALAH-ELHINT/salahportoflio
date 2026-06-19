@@ -31,6 +31,7 @@
     ]
   },
   "dependencies": {
+    "@microsoft/clarity": "^1.0.2",
     "animejs": "^3.1.0",
     "babel-eslint": "10.x",
     "babel-plugin-styled-components": "^1.12.0",

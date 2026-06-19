@@ -1,5 +1,6 @@
 module.exports = {
   email: 'salah.elhint.dev@gmail.com',
+  microsoftClarityId: process.env.GATSBY_CLARITY_PROJECT_ID || 'x9iruar80w',
 
   socialMedia: [
     {

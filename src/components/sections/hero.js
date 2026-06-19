@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { trackEvent } from '@services/analytics';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -77,6 +78,14 @@ const Hero = () => {
     <a
       className="email-link"
       href="mailto:salah.elhint.dev@gmail.com"
+      onClick={() => {
+        trackEvent('cta_click', {
+          name: 'hero_get_in_touch',
+          type: 'email',
+          url: 'mailto:salah.elhint.dev@gmail.com',
+        });
+        trackEvent('email_click', { email: 'salah.elhint.dev@gmail.com', source: 'hero' });
+      }}
       target="_blank"
       rel="noreferrer">
       Get In Touch

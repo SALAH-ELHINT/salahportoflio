@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { trackEvent } from '@services/analytics';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -66,7 +67,17 @@ const Contact = () => {
         projects.
       </p>
 
-      <a className="email-link" href="mailto:salah.elhint.dev@gmail.com">
+      <a
+        className="email-link"
+        href="mailto:salah.elhint.dev@gmail.com"
+        onClick={() => {
+          trackEvent('contact_form_submission', { type: 'email_direct', status: 'intent' });
+          trackEvent('cta_click', { name: 'contact_say_hello', type: 'email' });
+          trackEvent('email_click', {
+            email: 'salah.elhint.dev@gmail.com',
+            source: 'contact_section',
+          });
+        }}>
         Say Hello
       </a>
     </StyledContactSection>

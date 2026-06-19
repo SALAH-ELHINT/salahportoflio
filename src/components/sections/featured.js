@@ -5,6 +5,7 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { trackEvent } from '@services/analytics';
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -907,7 +908,16 @@ const Featured = () => {
                 </div>
                 <h3 className="project-title">
                   {project.external || project.github ? (
-                    <a href={project.external || project.github} target="_blank" rel="noreferrer">
+                    <a
+                      href={project.external || project.github}
+                      onClick={() =>
+                        trackEvent('project_card_click', {
+                          title: project.title,
+                          position: 'featured_title',
+                        })
+                      }
+                      target="_blank"
+                      rel="noreferrer">
                       {project.title}
                     </a>
                   ) : (
@@ -928,6 +938,18 @@ const Featured = () => {
                   <a
                     key={idx}
                     href={link.url}
+                    onClick={() => {
+                      trackEvent('project_card_click', {
+                        title: project.title,
+                        position: 'featured_custom_link',
+                        label: link.label,
+                      });
+                      trackEvent('external_link_click', {
+                        url: link.url,
+                        title: project.title,
+                        label: link.label,
+                      });
+                    }}
                     target="_blank"
                     rel="noreferrer"
                     className="custom-link">
@@ -952,6 +974,13 @@ const Featured = () => {
                 {project.github && (
                   <a
                     href={project.github}
+                    onClick={() =>
+                      trackEvent('github_click', {
+                        url: project.github,
+                        title: project.title,
+                        source: 'featured_footer',
+                      })
+                    }
                     aria-label="GitHub Link"
                     target="_blank"
                     rel="noreferrer">
@@ -961,6 +990,18 @@ const Featured = () => {
                 {project.external && (
                   <a
                     href={project.external}
+                    onClick={() => {
+                      trackEvent('cta_click', {
+                        name: 'project_external_view',
+                        title: project.title,
+                        url: project.external,
+                      });
+                      trackEvent('external_link_click', {
+                        url: project.external,
+                        title: project.title,
+                        source: 'featured_footer',
+                      });
+                    }}
                     aria-label="External Link"
                     className="external"
                     target="_blank"

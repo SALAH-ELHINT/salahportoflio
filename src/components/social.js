@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { socialMedia } from '@config';
 import { Side } from '@components';
 import { Icon } from '@components/icons';
+import { trackEvent } from '@services/analytics';
 
 const StyledSocialList = styled.ul`
   display: flex;
@@ -49,7 +50,20 @@ const Social = ({ isHome }) => (
       {socialMedia &&
         socialMedia.map(({ url, name }, i) => (
           <li key={i}>
-            <a href={url} aria-label={name} target="_blank" rel="noreferrer">
+            <a
+              href={url}
+              aria-label={name}
+              onClick={() => {
+                const eventName =
+                  name.toLowerCase() === 'linkedin'
+                    ? 'linkedin_click'
+                    : name.toLowerCase() === 'github'
+                      ? 'github_click'
+                      : 'external_link_click';
+                trackEvent(eventName, { url, source: 'social_sidebar', name });
+              }}
+              target="_blank"
+              rel="noreferrer">
               <Icon name={name} />
             </a>
           </li>

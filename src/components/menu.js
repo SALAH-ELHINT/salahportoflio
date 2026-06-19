@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { navLinks } from '@config';
 import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
+import { trackEvent } from '@services/analytics';
 
 const StyledMenu = styled.div`
   display: none;
@@ -258,7 +259,12 @@ const Menu = () => {
               <ol>
                 {navLinks.map(({ url, name }, i) => (
                   <li key={i}>
-                    <Link to={url} onClick={() => setMenuOpen(false)}>
+                    <Link
+                      to={url}
+                      onClick={() => {
+                        trackEvent('cta_click', { name: `menu_${name.toLowerCase()}`, url });
+                        setMenuOpen(false);
+                      }}>
                       {name}
                     </Link>
                   </li>
@@ -266,7 +272,15 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href="/salah-developer-full-stack-cv.pdf" className="resume-link">
+            <a
+              href="/salah-developer-full-stack-cv.pdf"
+              className="resume-link"
+              onClick={() =>
+                trackEvent('cv_download', {
+                  source: 'mobile_menu',
+                  file: 'salah-developer-full-stack-cv.pdf',
+                })
+              }>
               Resume
             </a>
           </nav>

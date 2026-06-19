@@ -8,6 +8,7 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
+import { trackEvent } from '@services/analytics';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -209,6 +210,12 @@ const Nav = ({ isHome }) => {
     <a
       className="resume-button"
       href="/salah-developer-full-stack-cv.pdf"
+      onClick={() =>
+        trackEvent('cv_download', {
+          source: 'nav_header',
+          file: 'salah-developer-full-stack-cv.pdf',
+        })
+      }
       target="_blank"
       rel="noopener noreferrer">
       Resume
@@ -227,7 +234,13 @@ const Nav = ({ isHome }) => {
                 {navLinks &&
                   navLinks.map(({ url, name }, i) => (
                     <li key={i}>
-                      <Link to={url}>{name}</Link>
+                      <Link
+                        to={url}
+                        onClick={() =>
+                          trackEvent('cta_click', { name: `nav_${name.toLowerCase()}`, url })
+                        }>
+                        {name}
+                      </Link>
                     </li>
                   ))}
               </ol>
@@ -254,7 +267,13 @@ const Nav = ({ isHome }) => {
                     navLinks.map(({ url, name }, i) => (
                       <CSSTransition key={i} classNames={fadeDownClass} timeout={timeout}>
                         <li key={i} style={{ transitionDelay: `${isHome ? i * 100 : 0}ms` }}>
-                          <Link to={url}>{name}</Link>
+                          <Link
+                            to={url}
+                            onClick={() =>
+                              trackEvent('cta_click', { name: `nav_${name.toLowerCase()}`, url })
+                            }>
+                            {name}
+                          </Link>
                         </li>
                       </CSSTransition>
                     ))}

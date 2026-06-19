@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { trackEvent } from '@services/analytics';
 
 const StyledProjectsSection = styled.section`
   display: flex;
@@ -224,13 +225,32 @@ const Projects = () => {
             </div>
             <div className="project-links">
               {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                <a
+                  href={github}
+                  onClick={() =>
+                    trackEvent('github_click', { url: github, title, source: 'noteworthy_header' })
+                  }
+                  aria-label="GitHub Link"
+                  target="_blank"
+                  rel="noreferrer">
                   <Icon name="GitHub" />
                 </a>
               )}
               {external && (
                 <a
                   href={external}
+                  onClick={() => {
+                    trackEvent('cta_click', {
+                      name: 'project_external_view',
+                      title,
+                      url: external,
+                    });
+                    trackEvent('external_link_click', {
+                      url: external,
+                      title,
+                      source: 'noteworthy_header',
+                    });
+                  }}
                   aria-label="External Link"
                   className="external"
                   target="_blank"
@@ -242,7 +262,13 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+            <a
+              href={external || github || '#'}
+              onClick={() =>
+                trackEvent('project_card_click', { title, position: 'noteworthy_title' })
+              }
+              target="_blank"
+              rel="noreferrer">
               {title}
             </a>
           </h3>
@@ -267,7 +293,11 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      <Link
+        className="inline-link archive-link"
+        to="/archive"
+        onClick={() => trackEvent('cta_click', { name: 'view_archive', url: '/archive' })}
+        ref={revealArchiveLink}>
         view the archive
       </Link>
 
@@ -302,7 +332,12 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      <button
+        className="more-button"
+        onClick={() => {
+          trackEvent('cta_click', { name: `show_${showMore ? 'less' : 'more'}_projects` });
+          setShowMore(!showMore);
+        }}>
         Show {showMore ? 'Less' : 'More'}
       </button>
     </StyledProjectsSection>
