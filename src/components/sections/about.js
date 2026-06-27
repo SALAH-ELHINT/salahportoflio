@@ -302,6 +302,18 @@ const VueIcon = () => (
   </svg>
 );
 
+const SvelteIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M19 8.5c0-1.38-1.13-2.5-2.5-2.5H12L8 2.5C7.2 1.7 5.8 1.7 5 2.5s-.8 2.1 0 2.9l4 4.1H4.5C3.12 9.5 2 10.62 2 12s1.12 2.5 2.5 2.5H9l4 4.1c.8.8 2.2.8 3 0s.8-2.1 0-2.9l-4-4.1h4.5c1.38 0 2.5-1.12 2.5-2.5z" />
+  </svg>
+);
+
 const LaravelIcon = () => (
   <svg
     viewBox="0 0 24 24"
@@ -338,6 +350,323 @@ const PythonIcon = () => (
     strokeLinecap="round"
     strokeLinejoin="round">
     <path d="M12 2c1.2 0 2.4.4 3.4 1.2A6 6 0 0 1 18 8v4h-6v2h8c.6 0 1.1.2 1.5.6.4.4.5.9.5 1.4A6 6 0 0 1 18 22c-1.2 0-2.4-.4-3.4-1.2A6 6 0 0 1 12 16v-4h6V8h-8c-.6 0-1.1-.2-1.5-.6C8.1 7 8 6.5 8 6a6 6 0 0 1 4-4z" />
+  </svg>
+);
+
+const GoIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    <path d="M2 12h20" />
+  </svg>
+);
+
+const KotlinIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M2 2h20L2 22V2z" />
+    <path d="M2 12h10l10-10" />
+  </svg>
+);
+
+const SwiftIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M12 21c-3.5-3.5-7.5-6.5-10-11.5 2.5 1.5 5 2 7.5 1.5-2-1.5-3.5-4-4-6.5C8 7 10 9 11.5 11.5c-1-3-1.5-6.5-.5-9.5 1.5 3 3.5 5.5 6 7-1.5-4-.5-8.5 2-12-1 4.5.5 8.5 3.5 11.5-2-1-4.5-1.5-7-1.5 2.5 2.5 5.5 4.5 9 6-4-1-8-1-11.5.5.5.5 1 1 1.5 1.5z" />
+  </svg>
+);
+
+const FastApiIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+  </svg>
+);
+
+const GraphQLIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5" />
+    <line x1="12" y1="2" x2="12" y2="22" />
+    <line x1="2" y1="8.5" x2="22" y2="15.5" />
+    <line x1="2" y1="15.5" x2="22" y2="8.5" />
+  </svg>
+);
+
+const ReduxIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+  </svg>
+);
+
+const SassIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+    <path d="M12 6a3 3 0 0 0-3 3c0 3 6 1.5 6 4.5a3 3 0 0 1-6 0" />
+  </svg>
+);
+
+const TailwindIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M12 3c-1.2 0-2.4.6-3.2 1.7C7.2 6.6 6 9.4 6 12s1.2 5.4 2.8 7.3c.8 1.1 2 1.7 3.2 1.7 1.2 0 2.4-.6 3.2-1.7C16.8 17.4 18 14.6 18 12s-1.2-5.4-2.8-7.3c-.8-1.1-2-1.7-3.2-1.7z" />
+  </svg>
+);
+
+const PostgresqlIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15.5h-2v-2h2v2zm0-4.5h-2V7h2v6z" />
+  </svg>
+);
+
+const DynamodbIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <rect x="2" y="5" width="20" height="4" rx="1" />
+    <rect x="2" y="11" width="20" height="4" rx="1" />
+    <rect x="2" y="17" width="20" height="4" rx="1" />
+  </svg>
+);
+
+const ElasticsearchIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <circle cx="11" cy="11" r="8" />
+    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+  </svg>
+);
+
+const AwsIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M6 14.5a3 3 0 0 0 6 0V11a3 3 0 0 0-6 0v3.5z" />
+    <path d="M12 13.5a3 3 0 0 0 6 0V11a3 3 0 0 0-6 0v2.5z" />
+    <path d="M4 20h16" />
+  </svg>
+);
+
+const DockerIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M22 12.5a.5.5 0 0 1-.5.5H19a2 2 0 0 1-2-2V9a1 1 0 0 1 1-1h2.5a.5.5 0 0 1 .5.5v4z" />
+    <rect x="2" y="12" width="14" height="6" rx="1" />
+    <rect x="6" y="8" width="3" height="3" rx="0.5" />
+    <rect x="10" y="8" width="3" height="3" rx="0.5" />
+  </svg>
+);
+
+const KubernetesIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <polygon points="12 2 22 6.5 22 17.5 12 22 2 17.5 2 6.5" />
+    <circle cx="12" cy="12" r="4" />
+  </svg>
+);
+
+const TerraformIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <rect x="3" y="3" width="7" height="7" />
+    <rect x="14" y="3" width="7" height="7" />
+    <rect x="3" y="14" width="7" height="7" />
+    <rect x="14" y="14" width="7" height="7" />
+  </svg>
+);
+
+const ArgoCdIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5" />
+    <path d="M12 12v10" />
+  </svg>
+);
+
+const GithubActionsIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+    <polyline points="22 4 12 14.01 9 11.01" />
+  </svg>
+);
+
+const CircleCiIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 2a10 10 0 0 1 10 10A10 10 0 0 1 12 22" />
+  </svg>
+);
+
+const DatadogIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+    <line x1="4" y1="22" x2="4" y2="15" />
+  </svg>
+);
+
+const SentryIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+  </svg>
+);
+
+const PlaywrightIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+  </svg>
+);
+
+const FigmaIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+    <path d="M12 9h3.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5H12V9z" />
+    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+    <path d="M5 18.5A3.5 3.5 0 0 1 8.5 15H12v3.5A3.5 3.5 0 0 1 8.5 22 3.5 3.5 0 0 1 5 18.5z" />
+  </svg>
+);
+
+const SlackIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <rect x="3" y="3" width="7" height="7" rx="1" />
+    <rect x="14" y="3" width="7" height="7" rx="1" />
+    <rect x="14" y="14" width="7" height="7" rx="1" />
+    <rect x="3" y="14" width="7" height="7" rx="1" />
+  </svg>
+);
+
+const GithubIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
   </svg>
 );
 
@@ -492,18 +821,71 @@ const AgileIcon = () => (
   </svg>
 );
 
+
 const getSkillIcon = iconName => {
   switch (iconName) {
     case 'react':
       return <ReactIcon />;
     case 'vue':
       return <VueIcon />;
+    case 'svelte':
+      return <SvelteIcon />;
     case 'laravel':
       return <LaravelIcon />;
     case 'node':
       return <NodeIcon />;
     case 'python':
       return <PythonIcon />;
+    case 'go':
+      return <GoIcon />;
+    case 'kotlin':
+      return <KotlinIcon />;
+    case 'swift':
+      return <SwiftIcon />;
+    case 'fastapi':
+      return <FastApiIcon />;
+    case 'graphql':
+      return <GraphQLIcon />;
+    case 'redux':
+      return <ReduxIcon />;
+    case 'sass':
+      return <SassIcon />;
+    case 'tailwind':
+      return <TailwindIcon />;
+    case 'postgresql':
+      return <PostgresqlIcon />;
+    case 'dynamodb':
+      return <DynamodbIcon />;
+    case 'elasticsearch':
+      return <ElasticsearchIcon />;
+    case 'aws':
+      return <AwsIcon />;
+    case 'docker':
+      return <DockerIcon />;
+    case 'kubernetes':
+      return <KubernetesIcon />;
+    case 'terraform':
+      return <TerraformIcon />;
+    case 'argocd':
+      return <ArgoCdIcon />;
+    case 'githubactions':
+      return <GithubActionsIcon />;
+    case 'circleci':
+      return <CircleCiIcon />;
+    case 'datadog':
+      return <DatadogIcon />;
+    case 'sentry':
+      return <SentryIcon />;
+    case 'playwright':
+      return <PlaywrightIcon />;
+    case 'figma':
+      return <FigmaIcon />;
+    case 'slack':
+      return <SlackIcon />;
+    case 'git':
+      return <GitIcon />;
+    case 'github':
+      return <GithubIcon />;
     case 'mobile':
       return <MobileIcon />;
     case 'database':
@@ -512,8 +894,6 @@ const getSkillIcon = iconName => {
       return <MongoIcon />;
     case 'terminal':
       return <TerminalIcon />;
-    case 'git':
-      return <GitIcon />;
     case 'server':
       return <ServerIcon />;
     case 'saas':
@@ -544,73 +924,90 @@ const About = () => {
 
   const categories = [
     {
-      title: 'Back-end',
+      title: 'Back-end & APIs',
       skills: [
+        { name: 'Golang', icon: 'go' },
+        { name: 'Python', icon: 'python' },
         { name: 'Laravel & PHP', icon: 'laravel' },
         { name: 'Node.js & Express', icon: 'node' },
-        { name: 'Python & Django', icon: 'python' },
-        { name: 'wxPython Desktop Apps', icon: 'python' },
+        { name: 'FastAPI', icon: 'fastapi' },
+        { name: 'GraphQL', icon: 'graphql' },
+        { name: 'Kotlin', icon: 'kotlin' },
       ],
     },
     {
-      title: 'Front-end',
+      title: 'Front-end Development',
       skills: [
-        { name: 'React.js & Next.js', icon: 'react' },
-        { name: 'Vue.js & Angular', icon: 'vue' },
-        { name: 'TypeScript & SCSS', icon: 'terminal' },
-        { name: 'Tailwind CSS & CSS', icon: 'react' },
-        { name: 'Bootstrap & Redux', icon: 'react' },
+        { name: 'React & Next.js', icon: 'react' },
+        { name: 'Vue.js', icon: 'vue' },
+        { name: 'Svelte', icon: 'svelte' },
+        { name: 'TypeScript', icon: 'terminal' },
+        { name: 'Redux', icon: 'redux' },
+        { name: 'Sass / SCSS', icon: 'sass' },
+        { name: 'Tailwind CSS', icon: 'tailwind' },
+        { name: 'HTML5 & CSS3', icon: 'react' },
       ],
     },
     {
-      title: 'Mobile',
+      title: 'Mobile Development',
       skills: [
-        { name: 'React Native & Expo', icon: 'mobile' },
+        { name: 'Swift', icon: 'swift' },
+        { name: 'Kotlin', icon: 'kotlin' },
         { name: 'Flutter', icon: 'mobile' },
+        { name: 'React Native & Expo', icon: 'mobile' },
         { name: 'Capacitor Apps', icon: 'mobile' },
       ],
     },
     {
-      title: 'Database',
+      title: 'Databases & Storage',
       skills: [
-        { name: 'MySQL & PostgreSQL', icon: 'database' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'MySQL', icon: 'database' },
+        { name: 'DynamoDB', icon: 'dynamodb' },
         { name: 'MongoDB', icon: 'mongodb' },
-        { name: 'Database Architecture', icon: 'database' },
+        { name: 'Elasticsearch', icon: 'elasticsearch' },
       ],
     },
     {
-      title: 'Devops and cloud',
+      title: 'DevOps & Cloud',
       skills: [
-        { name: 'Linux VPS & Server Mgt.', icon: 'terminal' },
+        { name: 'AWS', icon: 'aws' },
+        { name: 'Docker', icon: 'docker' },
+        { name: 'Kubernetes', icon: 'kubernetes' },
+        { name: 'Terraform', icon: 'terraform' },
+        { name: 'Argo CD', icon: 'argocd' },
         { name: 'Nginx & Cloudflare', icon: 'server' },
-        { name: 'CI/CD & Git Deploy', icon: 'git' },
+        { name: 'Linux VPS Mgt.', icon: 'terminal' },
       ],
     },
     {
-      title: 'Architecture',
+      title: 'CI/CD & Monitoring',
       skills: [
-        { name: 'Multi-tenant SaaS & RBAC', icon: 'saas' },
-        { name: 'Microservices & APIs', icon: 'api' },
-        { name: 'WebSockets & Real-time', icon: 'api' },
+        { name: 'GitHub Actions', icon: 'githubactions' },
+        { name: 'Circle CI', icon: 'circleci' },
+        { name: 'DataDog', icon: 'datadog' },
+        { name: 'Sentry', icon: 'sentry' },
+        { name: 'Git & GitHub', icon: 'git' },
       ],
     },
     {
-      title: 'Tools',
+      title: 'Testing & Automation',
       skills: [
-        { name: 'Git, GitHub & Bitbucket', icon: 'git' },
+        { name: 'Playwright', icon: 'playwright' },
+        { name: 'Web Scraping (Selenium)', icon: 'scraping' },
         { name: 'Postman API Testing', icon: 'api' },
+        { name: 'Serial Comm & Sensors', icon: 'terminal' },
+      ],
+    },
+    {
+      title: 'Tools & Management',
+      skills: [
+        { name: 'Figma', icon: 'figma' },
+        { name: 'Slack', icon: 'slack' },
         { name: 'Agile (Scrum / Notion)', icon: 'agile' },
         { name: 'ClickUp Management', icon: 'agile' },
-      ],
-    },
-    {
-      title: 'Other',
-      skills: [
-        { name: 'Scraping (Selenium / BS4)', icon: 'scraping' },
-        { name: 'Data Analysis & PostHog', icon: 'scraping' },
         { name: 'WordPress & WooCommerce', icon: 'wordpress' },
         { name: 'Strapi CMS', icon: 'wordpress' },
-        { name: 'Serial Comm & Sensors', icon: 'terminal' },
       ],
     },
   ];
@@ -654,7 +1051,7 @@ const About = () => {
         </StyledPic>
       </div>
 
-      <StyledSkillsTitle>Technologies I work with daily:</StyledSkillsTitle>
+      <StyledSkillsTitle>Technologies & tools I work with:</StyledSkillsTitle>
 
       <StyledSkillsDashboard>
         {categories.map((category, i) => (
